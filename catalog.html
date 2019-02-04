@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nёrds. Каталог</title>
+</head>
+<body>
+    <div class="c-header-background">
+        <div class="wrap">
+            <header class="c-header">
+                <h1 class="main-title">Магазин готовых шаблонов</h1>
+                <nav class="c-navbar">
+                    <img src="img/nerds-logo.svg" alt="Nёrds">
+                    <ul class="c-user-nav">
+                        <li><a href="#">Студия</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <a href="basket.html" class="basket">Корзина</a>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <main class="catalog-page">
+        <div class="wrap">
+            <section class="filtr-list">
+                <h2 class="visually-hidden">Фильтр</h2>
+                <form method="get" action="">
+                    <fieldset class="filtr-item">
+                        <legend class="title-filtr">Стоимость:</legend>
+                        <div class="range-filtr">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                    <div class="toogle toogle-min"></div>
+                                    <div class="toogle toogle-max"></div>
+                                </div>
+                            </div>
+                            <div class="price-controls">
+                                <label for="" class="min-price">от<input type="text" class="min-price" value="0"></label>
+                                <label for="" class="max-price">до<input type="text" class="max-price" value="15000"></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filtr-item gridiron">
+                        <legend class="title-filtr">Сетка:</legend>
+                        <label>
+                            <input type="radio" class="visually-hidden" name="gridiron-radio" id="">
+                            <span class="radio-btn"></span>
+                            Адаптивная
+                        </label>
+                        <label>
+                            <input type="radio" class="visually-hidden" name="gridiron-radio" id="">
+                            <span class="radio-btn"></span>
+                            Фиксированная
+                        </label>
+                        <label>
+                            <input type="radio" class="visually-hidden" name="gridiron-radio" id="">
+                            <span class="radio-btn"></span>
+                            Резиновая
+                        </label>
+                    </fieldset>
+                    <fieldset class="filtr-item features">
+                        <legend class="title-filtr">Особенности:</legend>
+                        <label>
+                            <input type="checkbox" class="visually-hidden" name="features-btn-slider" id="" checked>
+                            <span class="checkbox-btn"></span>
+                            Слайдер
+                        </label>
+                        <label>
+                            <input type="checkbox" class="visually-hidden" name="features-btn-block-advantages" id="">
+                            <span class="checkbox-btn"></span>
+                            Блок преимуществ
+                        </label>
+                        <label>
+                            <input type="checkbox" class="visually-hidden" name="features-btn-news" id="" checked>
+                            <span class="checkbox-btn"></span>
+                            Новости
+                        </label>
+                        <label>
+                            <input type="checkbox" class="visually-hidden" name="features-btn-galery" id="">
+                            <span class="checkbox-btn"></span>
+                            Галерея
+                        </label>
+                        <label>
+                            <input type="checkbox" class="visually-hidden" name="features-btn-basket" id="">
+                            <span class="checkbox-btn"></span>
+                            Корзина
+                        </label>
+                    </form>
+                </fieldset>
+                <button class="button">Показать</button>
+            </section>
+            <section class="catalog-list">
+                <h2 class="visually-hidden">Ассортимент</h2>
+                <div class="separator-block">
+                    <span class="title-filtr">Сортировать:</span>
+                    <div class="separator">
+                        <ul class="separator-sign">
+                            <li><a href="">По цене</a></li>
+                            <li><a href="">По типу</a></li>
+                            <li><a href="">По названию</a></li>
+                        </ul>
+                        <div class="up-or-down">
+                            <a href="" class="up-to-down" aria-label="Сверху вниз"></a>
+                            <a href="" class="down-to-up" aria-label="Снизу вверх"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="product-list">
+                    <li class="product-item">
+                        <div class="circles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-sedona.jpg" alt="" width="360px" height="576px">
+                        <div class="product-item-info">
+                            <h3>Sedona</h3>
+                            <p>
+                            Информационный сайт для туристов
+                            </p>
+                            <button class="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="circles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-pink.jpg" alt="" width="360px" height="576px">
+                        <div class="product-item-info">
+                            <h3>Pink</h3>
+                            <p>
+                            Информационный сайт для туристов
+                            </p>
+                            <button class="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="circles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-barbershop.jpg" alt="" width="360px" height="576px">
+                        <div class="product-item-info">
+                            <h3>Barbershop</h3>
+                            <p>
+                            Информационный сайт
+                            </p>
+                            <button class="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="circles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-mishka.jpg" alt="" width="360px" height="576px">
+                        <div class="product-item-info">
+                            <h3>Mishka</h3>
+                            <p>
+                            Информационный сайт
+                            </p>
+                            <button class="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="circles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-aplus.jpg" alt="" width="360px" height="576px">
+                        <div class="product-item-info">
+                            <h3>Aplus</h3>
+                            <p>
+                            Информационный сайт
+                            </p>
+                            <button class="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="circles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-kvast.jpg" alt="" width="360px" height="576px">
+                        <div class="product-item-info">
+                            <h3>Kvast</h3>
+                            <p>
+                            Информационный сайт
+                            </p>
+                            <button class="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="pagination-list">
+                        <li class="pagination-item-number">
+                            <a href="">1</a>
+                        </li>
+                        <li class="pagination-item-number">
+                            <a href="">2</a>
+                        </li>
+                        <li class="pagination-item-number">
+                            <a href="">3</a>
+                        </li>
+                        <li class="pagination-item-next">
+                            <a href="">Следующая</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c519ea91a90968e3073ab6bee6e841f96478e9fb1ee417fd68eab0913b93435&amp;source=constructor" width="100%" height="417px" frameborder="0"></iframe>
+            <div class="map-inner">
+                <div class="contacts">
+                    <h3 class="contacts-title">Nёrds design studio</h3>
+                    <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p class="contacts-text">тел. +7 (812) 275-75-75</p>
+                    <button class="button">Напишите нам</button>
+                </div>
+            </div>
+        </section>
+        <div class="wrap">
+            <section class="social">
+
+                <div class="social-list">
+                    <a href="" class="social-item vk"></a>
+                    <a href="" class="social-item fb"></a>
+                    <a href="" class="social-item inst"></a>
+                </div>
+
+                <div class="invite-text">
+                    <h2 class="invite-text-title">Давайте дружить, это выгодно!</h2>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
